@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dasar HTML | Form</title>
+</head>
+<body>
+    <h1>Form pendaftaran Studi Independen 2023 - PT Arkatama Multi Solusindo</h1>
+    <form action="" enctype="multipart/form-data">
+        <label for="nama"><b>Nama</b></label> <br>
+        <input type="text" id="nama" name="nama" placeholder="Nama Lengkap" required> <br> <br>
+        <label for="email"><b>Email</b></label> <br>
+        <input type="email" id="email" name="email" placeholder="Email aktif" required> <br> <br>
+        <label for="telp"><b>No HP</b></label> <br>
+        <input type="tel" id="telp" name="telp" placeholder="No HP aktif" required> <br> <br>
+        <label for="gender"><b>Jenis Kelamin</b></label> <br>
+        <input type="radio" id="gender" name="gender"> Laki-laki <br>
+        <input type="radio" id="gender" name="gender"> Perempuan <br> <br>
+        <label for="prodi"><b>Prodi</b></label> <br>
+        <select name="prodi" id="prodi" required>
+            <option value="">Pilih</option>
+            <option value="Sistem Informasi">Sistem Informasi</option>
+            <option value="Informatika">Informatika</option>
+            <option value="Teknologi Informasi">Teknologi Informasi</option>
+        </select> <br> <br>
+        <label for="hobi"><b>Hobi</b></label> <br>
+        <input type="checkbox" name="hobi" id="hobi"> Membaca <br>
+        <input type="checkbox" name="hobi" id="hobi"> Menulis <br>
+        <input type="checkbox" name="hobi" id="hobi"> Menyanyi <br>
+        <input type="checkbox" name="hobi" id="hobi"> Olahraga <br> <br>
+        <label for="alamat"><b>Alamat</b></label> <br>
+        <textarea name="alamat" id="alamat" placeholder="Alamat lengkap" cols="30" rows="5"></textarea> <br><br>
+        <label for="foto"><b>Foto Diri</b></label> <br>
+        <input type="file" id="foto" name="foto"> <br> <br>
+        <input type="submit" value="Daftar">
+    </form>
+</body>
+</html>
