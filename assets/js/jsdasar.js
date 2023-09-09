@@ -74,7 +74,7 @@ let mood = "happy";
 
 switch(mood) {
     case "happy":
-        alert("it's your day :)");
+        alert("have a nice day :)");
         break;
     case "sad":
         alert("don't worry! Tomorrow will be a great day");
