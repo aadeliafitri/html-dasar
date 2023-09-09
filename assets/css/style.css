@@ -1,10 +1,13 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 :root{
+    --primary: rgb(102, 100, 100);
     --secondary: rgb(228, 187, 187);
+    --black: black;
 }
 
 body{
@@ -12,6 +15,8 @@ body{
     overflow-x: hidden;
     font-family: "Montserrat", sans-serif;
 }
+
+/*login*/
 
 .all-login{
     width: 100%;
@@ -83,9 +88,122 @@ input{
 }
 video{
     width: 600px;
-    /* filter: contrast(1); */
-    /* border: solid white 5px; */
 }
+
+/*navbar*/
+
+.topnav {
+    background-color: var(--primary);
+    overflow: hidden;
+    /* position: fixed; */
+  }
+  
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .topnav a.active {
+    background-color: var(--secondary);
+    color: black;
+  }
+
+/*hero*/
+
+.hero{
+    max-width: 100%;
+    position: relative;
+    background-color: var(--secondary);
+}
+
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+  }
+
+.hero-text a button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 10px 25px;
+    color: white;
+    background-color:var(--primary);
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+  
+.hero-text button:hover {
+    background-color: var(--secondary);
+    color: black;
+}
+
+.slideshow{
+    display: none;
+}
+
+.slideshow img {
+    height: 700px;
+}
+
+.prev, .next{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+  
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+  
+@keyframes fade {
+    from {opacity: 0.4}
+    to {opacity: 1}
+}  
+
+/*about*/
+
+.about-section {
+    /* margin-top: 0px; */
+    position: relative;
+    padding: 50px;
+    text-align: center;
+    background-color: var(--secondary);
+    color: black;
+  }
+
+/*product*/
 
 .catalog{
     margin-top: 30px;
@@ -140,3 +258,60 @@ video{
     /* opacity: 0.7; */
     transform: scale(1.1);
 }
+
+/*contact*/
+/* Style inputs */
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: var(--primary);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: var(--secondary);
+    color: black;
+  }
+  
+  /* Style the container/contact section */
+  .container {
+    margin-top: 25px;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+  }
+  
+  /* Create two columns that float next to eachother */
+  .column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /*footer*/
+  .footer-section {
+    /* margin-top: 0px; */
+    position: relative;
+    padding: 30px;
+    text-align: center;
+    background-color: var(--primary);
+    color: white;
+  }
