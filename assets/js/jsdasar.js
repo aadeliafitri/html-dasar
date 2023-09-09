@@ -1,4 +1,4 @@
-console.log("Welcome!"); alert("haloo partner!");
+console.log("Welcome!"); alert("haloo!");
 
 // variabel dan tipe data
 const nama = "Adel";
