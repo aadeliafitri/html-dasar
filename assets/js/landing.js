@@ -23,7 +23,7 @@ subTitle.innerText = "Don't miss it";
 subTitle.style.fontSize = "40px"
 setTimeout(() => {
     subTitle.innerText = "Just Buy It"
-}, 3000);
+}, 5000);
 
 let titleAbout = document.getElementById("title-about");
 titleAbout.style.fontSize = "60px";
