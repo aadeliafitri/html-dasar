@@ -252,6 +252,7 @@ video{
     padding: 5px;
     border-radius: 5px;
     color: black;
+    cursor: pointer;
 }
 
 .product:hover{
