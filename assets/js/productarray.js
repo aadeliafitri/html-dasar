@@ -33,7 +33,7 @@ let products = [
     },
 ];
 
-const productRow = document.querySelector(".row");
+const productContainer = document.querySelector(".product-container");
 
 products.forEach((product, i) => {
     const productDiv = document.createElement("div");
@@ -62,5 +62,5 @@ products.forEach((product, i) => {
     productDiv.appendChild(productPrice);
     productDiv.appendChild(productLink);
 
-    productRow.appendChild(productDiv);
+    productContainer.appendChild(productDiv);
 })
