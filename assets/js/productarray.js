@@ -33,15 +33,34 @@ let products = [
     },
 ];
 
-// console.log(products);   
+const productRow = document.querySelector(".row");
 
-// const rows = document.querySelector(".row");
+products.forEach((product, i) => {
+    const productDiv = document.createElement("div");
+    productDiv.setAttribute("class", "product");
 
-products.forEach(function (product, i) {
-    const productContainer = document.querySelector(`.product-${i + 1}`);
-    const productTitle = productContainer.querySelector(".title-product");
-    const productPrice = productContainer.querySelector(".price");
+    const productImg = document.createElement("img");
+    productImg.setAttribute("class", "photo-product");
+    productImg.src = `../assets/images/products/products-${i+1}.jpg`;
+    productImg.alt = product.nama_product;
 
+    const productTitle = document.createElement("h3");
+    productTitle.setAttribute("class", "title-product");
     productTitle.innerText = product.nama_product;
+
+    const productPrice = document.createElement("p");
+    productPrice.setAttribute("class", "price");
     productPrice.innerHTML = `<small>Rp${product.price.toLocaleString()},00</small>`;
+
+    const productLink = document.createElement("a");
+    productLink.setAttribute("class", "btn-product");
+    productLink.href = "../index.html";
+    productLink.innerHTML = "<b>Buy</b>";
+
+    productDiv.appendChild(productImg);
+    productDiv.appendChild(productTitle);
+    productDiv.appendChild(productPrice);
+    productDiv.appendChild(productLink);
+
+    productRow.appendChild(productDiv);
 })
