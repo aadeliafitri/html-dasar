@@ -263,6 +263,108 @@ video{
     transform: scale(1.1);
 }
 
+.formProductPopup {
+    position: relative;
+    /* text-align: center; */
+    width: 100%;
+  }
+  .formPopup {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 15%;
+    transform: translate(-50%, 5%);
+    border: 3px solid #999999;
+    border-radius: 10px;
+    z-index: 9;
+  }
+  .formContainer {
+    max-width: 300px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+  }
+  .formContainer h2{
+    margin-bottom: 7px;
+  }
+  .formContainer input[type=text],
+  .formContainer input[type=number] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 20px 0;
+    border: none;
+    background: #eee;
+  }
+  .formContainer input[type=text]:focus,
+  .formContainer input[type=number]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  .formContainer .btn {
+    padding: 12px 20px;
+    border: none;
+    background-color: #8ebf42;
+    color: #fff;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 15px;
+    opacity: 0.8;
+  }
+  .formContainer .cancel {
+    background-color: #cc0000;
+  }
+  .formContainer .btn:hover{
+    opacity: 1;
+  }
+
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: 5px;
+  }
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+.add-product{
+    margin-left:47%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+.add-product .btn{
+    cursor: pointer;
+    text-align: center;
+    padding: 7px;
+    background-color: var(--secondary);
+    border: none;
+    font-weight: 600;
+    border-radius: 5px;
+}
+.btn-delete {
+    background-color: transparent;
+    border: none;
+    color: red; /* White text */
+    padding: 5px; /* Some padding */
+    font-size: 16px; /* Set a font size */
+    cursor: pointer; /* Mouse pointer on hover */
+    margin-left: 5px;
+}
+.btn-edit {
+    background-color: var(--secondary);
+    border: none;
+    border-radius: 5px;
+    color: black; /* White text */
+    padding: 5px; /* Some padding */
+    font-size: 14px; /* Set a font size */
+    cursor: pointer; /* Mouse pointer on hover */
+    margin-left: 10px;
+}
+
 /*contact*/
 /* Style inputs */
 input[type=text], select, textarea {
