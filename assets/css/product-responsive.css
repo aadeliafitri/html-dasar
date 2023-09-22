@@ -1,0 +1,194 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: rgb(102, 100, 100);
+    --secondary: rgb(228, 187, 187);
+    --black: black;
+}
+
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+    font-family: "Montserrat", sans-serif;
+}
+
+/*product*/
+
+.catalog{
+    font-size: 28px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.product-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.product{
+    width: calc(50% - 30px);
+    /* border: 2px solid black; */
+    border-radius: 10px;
+    margin:  10px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    padding-bottom: 15px;
+    transition: transform 1s; 
+}
+
+.photo-product{
+    width: 100%;
+    border-radius: 10px 10px 0px 0px; 
+}
+
+.title-product{
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.price{
+    margin-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.btn-product{
+    text-decoration: none;
+    background-color: var(--secondary);
+    margin-left: 10px;
+    /* margin-top: 10px; */
+    padding: 5px;
+    border-radius: 5px;
+    color: black;
+    cursor: pointer;
+}
+
+.product:hover{
+    /* opacity: 0.7; */
+    transform: scale(1.1);
+}
+
+.formProductPopup {
+    position: relative;
+    /* text-align: center; */
+    width: 100%;
+  }
+  .formPopup {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 15%;
+    transform: translate(-50%, 5%);
+    border: 3px solid #999999;
+    border-radius: 10px;
+    z-index: 9;
+  }
+  .formContainer {
+    max-width: 300px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+  }
+  .formContainer h2{
+    margin-bottom: 7px;
+  }
+  .formContainer input[type=text],
+  .formContainer input[type=number] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 20px 0;
+    border: none;
+    background: #eee;
+  }
+  .formContainer input[type=text]:focus,
+  .formContainer input[type=number]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  .formContainer .btn {
+    padding: 12px 20px;
+    border: none;
+    background-color: #8ebf42;
+    color: #fff;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 15px;
+    opacity: 0.8;
+  }
+  .formContainer .cancel {
+    background-color: #cc0000;
+  }
+  .formContainer .btn:hover{
+    opacity: 1;
+  }
+
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: 5px;
+  }
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+.add-product{
+    width: fit-content;
+    margin: 1% auto;
+}
+.add-product .btn{
+    font-size: 14px;
+    cursor: pointer;
+    text-align: center;
+    padding: 7px;
+    background-color: var(--secondary);
+    border: none;
+    font-weight: 600;
+    border-radius: 5px;
+    /* margin: auto; */
+}
+.btn-delete {
+    background-color: transparent;
+    border: none;
+    color: red; /* White text */
+    padding: 5px; /* Some padding */
+    font-size: 16px; /* Set a font size */
+    cursor: pointer; /* Mouse pointer on hover */
+    margin-left: 5px;
+}
+.btn-edit {
+    background-color: var(--secondary);
+    border: none;
+    border-radius: 5px;
+    color: black; /* White text */
+    padding: 5px; /* Some padding */
+    font-size: 14px; /* Set a font size */
+    cursor: pointer; /* Mouse pointer on hover */
+    margin-left: 10px;
+}
+
+@media screen and (min-width: 768px) {
+    .product{
+        width: calc(25% - 30px);
+    }
+
+    .catalog{
+        font-size: 32px;
+    }
+
+    .add-product .btn{
+        font-size: 16px;
+    }
+}

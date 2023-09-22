@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dasar HTML | Product</title>
+    <link rel="stylesheet" href="../assets/css/product-responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+</head>
+<body>
+    <h1 class="catalog">Catalog Product</h1>
+    <div class="add-product">
+        <button class="btn" onclick="openAddProductForm()">Add Product</button>
+    </div>
+    <div class="product-container"></div>
+    <div class="formProductPopup">
+        <div class="formPopup" id="popupForm">
+            <a class="close" onclick="closeAddProductForm()">&times;</a>
+            <form action="/action_page.php" class="formContainer">
+                <h2>Add Product</h2>
+                <label for="productName">
+                <strong>Product Name</strong>
+                </label>
+                <input type="text" id="productName" placeholder="enter the product's name" name="productName" required>
+                <label for="price">
+                <strong>Price</strong>
+                </label>
+                <input type="number" id="productPrice" placeholder="enter the product's price" name="productPrice" required>
+                <button type="submit" class="btn">Add Product</button>
+                <!-- <button type="button" class="btn cancel" onclick="closeForm()">Close</button> -->
+            </form>
+        </div>
+    </div>
+    <div class="formProductPopup">
+        <div class="formPopup" id="popupFormEdit">
+            <a class="close" onclick="closeEditProductForm()">&times;</a>
+            <form action="/action_page.php" class="formContainer">
+                <h2>Edit Product</h2>
+                <label for="productNameEdit">
+                <strong>Product Name</strong>
+                </label>
+                <input type="text" id="productNameEdit" placeholder="enter the product's name" name="productNameEdit" required>
+                <label for="productPriceEdit">
+                <strong>Price</strong>
+                </label>
+                <input type="number" id="productPriceEdit" placeholder="enter the product's price" name="productPriceEdit" required>
+                <button type="submit" class="btn">Edit Product</button>
+                <!-- <button type="button" class="btn cancel" onclick="closeForm()">Close</button> -->
+            </form>
+        </div>
+    </div>
+    <script src="../assets/js/productapi.js"></script>
+</body>
+</html> 
