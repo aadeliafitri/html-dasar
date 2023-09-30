@@ -13,7 +13,7 @@
 
 body {
     max-width: 100%;
-    overflow: hidden;
+    overflow-x: hidden;
     font-family: "Montserrat", sans-serif;
 }
 
@@ -106,6 +106,9 @@ video {
 /* Media queries for responsiveness */
 
 @media screen and (min-width: 768px) {
+    body{
+        overflow: hidden;
+    }
     .all-login {
         flex-direction: row;
     }
